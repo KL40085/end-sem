@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sum of N Numbers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="calculator">
+      <div class="eyebrow">SIMPLE MATH TOOL</div>
+      <h1>Sum of <span>N</span> Numbers</h1>
+      <p class="subtitle">Enter any amount of numbers and find their total instantly.</p>
+
+      <label for="numbers">Your numbers</label>
+      <textarea id="numbers" placeholder="Example: 10, 20, 30, 40" spellcheck="false"></textarea>
+      <p class="hint">Separate numbers with commas, spaces, or new lines.</p>
+
+      <div class="actions">
+        <button id="calculate" class="primary">Calculate Sum</button>
+        <button id="clear" class="secondary">Clear</button>
+      </div>
+
+      <div class="result" aria-live="polite">
+        <div class="result-label">TOTAL SUM</div>
+        <div id="sum" class="sum">0</div>
+        <div id="count" class="count">0 numbers entered</div>
+      </div>
+      <p id="error" class="error" role="alert"></p>
+      <button id="sample" class="sample">Try sample numbers</button>
+    </section>
+    <footer>Made for quick and easy calculations</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
